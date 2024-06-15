@@ -74,7 +74,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # R11.1
     export FOX_VERSION="R11.1_0_000"
     export OF_MAINTAINER="Nachoneko"
-    export FOX_BUILD_TYPE="Developer-Preview"
+    export FOX_BUILD_TYPE="Stable"
     
 	# Screen Settings
 	export OF_SCREEN_H=2340
