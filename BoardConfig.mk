@@ -171,6 +171,7 @@ TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 ifeq ($(TW_DEFAULT_LANGUAGE),)
 TW_DEFAULT_LANGUAGE := zh_CN
+TW_BACKUP_EXCLUSIONS := /data/adb/ksu/modules.img
 endif
 TW_DEFAULT_BRIGHTNESS := 200
 TW_STATUS_ICONS_ALIGN := center
