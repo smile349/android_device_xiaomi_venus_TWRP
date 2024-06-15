@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="star"
+FDEVICE="venus"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="zh_CH"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
-	export TARGET_DEVICE_ALT="star,starin"
-	export OF_TARGET_DEVICES="star,starin"
+	export TARGET_DEVICE_ALT="venus,venusin"
+	export OF_TARGET_DEVICES="venus,venusin"
 	export OF_AB_DEVICE=1
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
