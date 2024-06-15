@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="venus"
+FDEVICE="star"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -38,8 +38,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
    	export TW_DEFAULT_LANGUAGE="zh_CH"
 	export LC_ALL="C"
  	export ALLOW_MISSING_DEPENDENCIES=true
-	export TARGET_DEVICE_ALT="venus,venusin"
-	export OF_TARGET_DEVICES="venus,venusin"
+	export TARGET_DEVICE_ALT="star,starin"
+	export OF_TARGET_DEVICES="star,starin"
 	export OF_AB_DEVICE=1
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
@@ -62,8 +62,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_PATCH_AVB20=1
     export FOX_DELETE_AROMAFM=1
     export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
-    export FOX_ENABLE_APP_MANAGER=0
-    export FOX_DISABLE_APP_MANAGER=1
+    export FOX_ENABLE_APP_MANAGER=1
+    export FOX_DISABLE_APP_MANAGER=0
 
     # OTA
     export OF_KEEP_DM_VERITY=1
@@ -74,7 +74,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # R11.1
     export FOX_VERSION="R11.1_0_000"
     export OF_MAINTAINER="Nachoneko"
-    export OF_MAINTAINER_AVATAR="misc/Sushrut1101.png"
     export FOX_BUILD_TYPE="Developer-Preview"
     
 	# Screen Settings
