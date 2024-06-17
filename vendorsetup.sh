@@ -79,6 +79,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ADVANCED_SECURITY=1
 	export OF_USE_TWRP_SAR_DETECT=1
 	export FOX_VIRTUAL_AB_DEVICE=1
+        export FOX_BUILD_TYPE="Developer-Preview"
 
     
 	# Screen Settings
