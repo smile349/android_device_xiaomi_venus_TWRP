@@ -58,12 +58,12 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_XZ_UTILS=1
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
-    export OF_QUICK_BACKUP_LIST="/boot;/data;"
+        export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	export OF_PATCH_AVB20=1
-    export FOX_DELETE_AROMAFM=1
-    export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
-    export FOX_ENABLE_APP_MANAGER=1
-    export FOX_DISABLE_APP_MANAGER=0
+        export FOX_DELETE_AROMAFM=1
+        export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
+        export FOX_ENABLE_APP_MANAGER=1
+        export FOX_DISABLE_APP_MANAGER=0
 
     # OTA
     export OF_KEEP_DM_VERITY=1
@@ -72,9 +72,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
 
     # R11.1
-    export FOX_VERSION="R12.1_0_000"
-    export OF_MAINTAINER="Nachoneko"
-    export FOX_BUILD_TYPE="Stable"
+    	export FOX_VERSION="R12.1"
+	export FOX_VARIANT=MIUI
+	export OF_PATCH_AVB20=1
+	export OF_MAINTAINER="Nachoneko"
+	export OF_ADVANCED_SECURITY=1
+	export OF_USE_TWRP_SAR_DETECT=1
+	export FOX_VIRTUAL_AB_DEVICE=1
+
     
 	# Screen Settings
 	export OF_SCREEN_H=2340
